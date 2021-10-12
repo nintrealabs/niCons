@@ -1,0 +1,68 @@
+/*!
+ * niCons Free by @nintrea - https://nintrea.org - https://www.nintrea.xyz - https://nintrea.live
+ * License: https://github.com/nintrealabs/niCons/blob/main/LICENSE
+ * founder: https://github.com/sophatleat
+ * Location: https://www.google.com/maps/place/Cambodia/@12.1417782,102.7366949,7z/data=!3m1!4b1!4m5!3m4!1s0x310787bfd4dc3743:0xe4b7bfe089f41253!8m2!3d12.565679!4d104.990963: CAMBODIA
+ * github: https://github.com/nintrealabs/niCons
+ * publish Date: 10 / 10 / 2021
+ * Buy me a cup coffee: ABA: 001 270 139/ 002 580 343
+*/
+
+// merge all style together​ only one file
+// ដាក់ Style ទាំងអស់ក្នុងឯកសារតែមួយ
+@import "var";
+@import "root";
+
+i,
+font,
+span,
+.#{$css-prefix}, 
+.#{$css-prefix}r,
+.#{$css-prefix}s,
+.#{$css-prefix}b,
+.#{$css-prefix}d
+{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+/*!
+ * niCons all Icons
+ * 
+*/
+@import "icons";
+/*!
+ * niCons brand icon
+ * 
+*/
+@import "brand";
+/*!
+ * niCons solid icon
+ * 
+*/
+@import "solid";
+/*!
+ * niCons regular icon
+ * 
+*/
+@import "regular";
+/*!
+ * niCons doutone icon
+ * 
+*/
+@import "doutone";
+/*!
+ * niCons light icon
+ * 
+*/
+@import "light";
+/*!
+ * niCons Colors
+ * 
+*/
+@import "colors";

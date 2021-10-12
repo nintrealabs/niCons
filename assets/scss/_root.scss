@@ -1,0 +1,7 @@
+@import 'var';
+
+:root{
+    @each $var,$prefix in $colorroot{
+        --ni-#{$var} :#{$prefix};
+    }
+}

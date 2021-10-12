@@ -1,0 +1,13 @@
+
+
+
+// import variables from _var.scss
+@import "var";
+
+// foreach icons
+@each $icon, $content in $defualt-icons{
+    .#{$icon}:before { 
+        content:"#{$content}"; 
+    }
+}
+

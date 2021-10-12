@@ -1,0 +1,21 @@
+// import variables from _var.scss
+@import "var";
+
+@font-face {
+    font-family: 'niCons light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: $icon-display;
+    src:    url('#{$icon-path}/light-300.eot');
+    src:    url('#{$icon-path}/light-300.eot?#iefix') format('embedded-opentype'),
+            url('#{$icon-path}/light-300.woff2') format('woff2'),
+            url('#{$icon-path}/light-300.woff') format('woff'),
+            url('#{$icon-path}/light-300.ttf') format('truetype'),
+            url('#{$icon-path}/light-300.svg#nicons') format('svg');
+}
+  
+.#{$css-prefix},
+.#{$css-prefix}l {
+    font-family: 'niCons light';
+    font-weight: 300;
+}
