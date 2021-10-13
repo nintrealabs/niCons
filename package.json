@@ -1,6 +1,6 @@
 {
   "name": "nicons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "What is niCons ? niCons is a name of Library from NintreaLabs. Purpose to share Free icons to everyone know about Nintrea. niCons is made in Cambodia by Nintrea Team. The founder of Nintrea is @SophatLeat.",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,13 @@
     "khmer",
     "cambodia"
   ],
-  "author": "sophatleat",
+  "author": "@sophatleat",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nintrealabs/niCons/issues"
   },
-  "homepage": "https://github.com/nintrealabs/niCons#readme"
+  "homepage": "https://github.com/nintrealabs/niCons#readme",
+  "publishConfig": {
+    "@nintrea:registry": "https://npm.pkg.github.com"
+  }
 }
