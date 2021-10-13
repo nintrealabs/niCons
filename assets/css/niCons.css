@@ -1,5 +1,6 @@
 /*!
  * niCons Free by @nintrea - https://nintrea.org - https://www.nintrea.xyz - https://nintrea.live
+ * Version: 1.0.2
  * License: https://github.com/nintrealabs/niCons/blob/main/LICENSE
  * founder: https://github.com/sophatleat
  * Location: https://www.google.com/maps/place/Cambodia/@12.1417782,102.7366949,7z/data=!3m1!4b1!4m5!3m4!1s0x310787bfd4dc3743:0xe4b7bfe089f41253!8m2!3d12.565679!4d104.990963: CAMBODIA
@@ -96,6 +97,11 @@
   --ni-pink-700:#be185d;
   --ni-pink-800:#9d174d;
   --ni-pink-900:#831843;
+  --ni-secondary:var(--ni-gray);
+  --ni-danger:var(--ni-red);
+  --ni-warning:var(--ni-yellow);
+  --ni-success:var(--ni-greengray);
+  --ni-primary:var(--ni-pink);
 }
 
 i,
@@ -7081,6 +7087,66 @@ span,
 
 .border-pink-900 {
   border-color: var(--ni-pink-900);
+}
+
+.text-secondary {
+  color: var(--ni-secondary);
+}
+
+.bg-secondary {
+  background: var(--ni-secondary);
+}
+
+.border-secondary {
+  border-color: var(--ni-secondary);
+}
+
+.text-danger {
+  color: var(--ni-danger);
+}
+
+.bg-danger {
+  background: var(--ni-danger);
+}
+
+.border-danger {
+  border-color: var(--ni-danger);
+}
+
+.text-warning {
+  color: var(--ni-warning);
+}
+
+.bg-warning {
+  background: var(--ni-warning);
+}
+
+.border-warning {
+  border-color: var(--ni-warning);
+}
+
+.text-success {
+  color: var(--ni-success);
+}
+
+.bg-success {
+  background: var(--ni-success);
+}
+
+.border-success {
+  border-color: var(--ni-success);
+}
+
+.text-primary {
+  color: var(--ni-primary);
+}
+
+.bg-primary {
+  background: var(--ni-primary);
+}
+
+.border-primary {
+  border-color: var(--ni-primary);
 }
 
 .rounded-1rem {
@@ -19582,6 +19648,646 @@ span,
 .pink-900-to-pink {
   color: var(--ni-pink-900);
   background: -webkit-linear-gradient(45deg, var(--ni-pink-900), var(--ni-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-to-secondary {
+  color: var(--ni-gray);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-to-secondary {
+  color: var(--ni-red);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.yellow-to-secondary {
+  color: var(--ni-yellow);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greengray-to-secondary {
+  color: var(--ni-greengray);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.blue-to-secondary {
+  color: var(--ni-blue);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purplegray-to-secondary {
+  color: var(--ni-purplegray);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purple-to-secondary {
+  color: var(--ni-purple);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.pink-to-secondary {
+  color: var(--ni-pink);
+  background: -webkit-linear-gradient(45deg, var(--ni-pink), var(--ni-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-gray {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-red {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-yellow {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-greengray {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-greengray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-blue {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-purplegray {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-purplegray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-purple {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.secondary-to-pink {
+  color: var(--ni-secondary);
+  background: -webkit-linear-gradient(45deg, var(--ni-secondary), var(--ni-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-to-danger {
+  color: var(--ni-gray);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-to-danger {
+  color: var(--ni-red);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.yellow-to-danger {
+  color: var(--ni-yellow);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greengray-to-danger {
+  color: var(--ni-greengray);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.blue-to-danger {
+  color: var(--ni-blue);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purplegray-to-danger {
+  color: var(--ni-purplegray);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purple-to-danger {
+  color: var(--ni-purple);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.pink-to-danger {
+  color: var(--ni-pink);
+  background: -webkit-linear-gradient(45deg, var(--ni-pink), var(--ni-danger));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-gray {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-red {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-yellow {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-greengray {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-greengray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-blue {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-purplegray {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-purplegray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-purple {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.danger-to-pink {
+  color: var(--ni-danger);
+  background: -webkit-linear-gradient(45deg, var(--ni-danger), var(--ni-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-to-warning {
+  color: var(--ni-gray);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-to-warning {
+  color: var(--ni-red);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.yellow-to-warning {
+  color: var(--ni-yellow);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greengray-to-warning {
+  color: var(--ni-greengray);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.blue-to-warning {
+  color: var(--ni-blue);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purplegray-to-warning {
+  color: var(--ni-purplegray);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purple-to-warning {
+  color: var(--ni-purple);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.pink-to-warning {
+  color: var(--ni-pink);
+  background: -webkit-linear-gradient(45deg, var(--ni-pink), var(--ni-warning));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-gray {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-red {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-yellow {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-greengray {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-greengray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-blue {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-purplegray {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-purplegray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-purple {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.warning-to-pink {
+  color: var(--ni-warning);
+  background: -webkit-linear-gradient(45deg, var(--ni-warning), var(--ni-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-to-success {
+  color: var(--ni-gray);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-to-success {
+  color: var(--ni-red);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.yellow-to-success {
+  color: var(--ni-yellow);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greengray-to-success {
+  color: var(--ni-greengray);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.blue-to-success {
+  color: var(--ni-blue);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purplegray-to-success {
+  color: var(--ni-purplegray);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purple-to-success {
+  color: var(--ni-purple);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.pink-to-success {
+  color: var(--ni-pink);
+  background: -webkit-linear-gradient(45deg, var(--ni-pink), var(--ni-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-gray {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-red {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-yellow {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-greengray {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-greengray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-blue {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-purplegray {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-purplegray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-purple {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.success-to-pink {
+  color: var(--ni-success);
+  background: -webkit-linear-gradient(45deg, var(--ni-success), var(--ni-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gray-to-primary {
+  color: var(--ni-gray);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-to-primary {
+  color: var(--ni-red);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.yellow-to-primary {
+  color: var(--ni-yellow);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greengray-to-primary {
+  color: var(--ni-greengray);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.blue-to-primary {
+  color: var(--ni-blue);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purplegray-to-primary {
+  color: var(--ni-purplegray);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.purple-to-primary {
+  color: var(--ni-purple);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.pink-to-primary {
+  color: var(--ni-pink);
+  background: -webkit-linear-gradient(45deg, var(--ni-pink), var(--ni-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-gray {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-red {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-yellow {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-greengray {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-greengray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-blue {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-purplegray {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-purplegray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-purple {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.primary-to-pink {
+  color: var(--ni-primary);
+  background: -webkit-linear-gradient(45deg, var(--ni-primary), var(--ni-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

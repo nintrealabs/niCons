@@ -93,7 +93,12 @@ $colors:(
     "pink-600",
     "pink-700",
     "pink-800",
-    "pink-900"
+    "pink-900",
+    "secondary",
+    "danger",
+    "warning",
+    "success",
+    "primary"
 );
 
 $gray:"gray";
@@ -193,7 +198,12 @@ $colorroot:(
     "pink-600":"#db2777",
     "pink-700":"#be185d",
     "pink-800":"#9d174d",
-    "pink-900":"#831843"
+    "pink-900":"#831843",
+    "secondary":"var(--ni-gray)",
+    "danger":"var(--ni-red)",
+    "warning":"var(--ni-yellow)",
+    "success":"var(--ni-greengray)",
+    "primary":"var(--ni-pink)"
 );
 
 
@@ -202,12 +212,9 @@ $colorroot:(
 // ****ROOT Defualt****
 // ====================
 $icon-path:         "../fonts" !default;
-$ni-icon-size-base:    "16px" !default;
 $icon-display:      "block" !default;
 $css-prefix:        "ni" !default;
-$version:           "1.0.0" !default;
-$ni-border-color:      "#eee" !default;
-$ni-primary-opacity:   1 !default;
+$version:           "1.0.2" !default;
 
 
 
