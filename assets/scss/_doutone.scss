@@ -2,7 +2,7 @@
 @import "var";
 
 @each $icon, $content in $ni-doutone{
-    .nid.#{$icon}:before { 
+    .nid .#{$icon}:before { 
         content:"#{$content}"; 
     }
 }

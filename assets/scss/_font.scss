@@ -1,0 +1,19 @@
+@import "var";
+
+@for $i from 1 through 225 { 
+    .font-#{$i}px{ 
+        font-size: #{$i}px;
+    }
+    .font-#{$i}rem{ 
+        font-size: #{$i}rem;
+    }
+    .font-#{$i}em{ 
+        font-size: #{$i}em;
+    }
+}
+
+@each $font,$size in $font-size{
+    .font-#{$font}{
+        font-size: #{$size};
+    }
+}

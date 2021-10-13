@@ -1,4 +1,4 @@
-
+// import variable
 @import "var";
 
 @each $name in $colors{
@@ -7,10 +7,10 @@
         
     }
     .bg-#{$name}{
-        background-color:var(--ni-#{$name})
+        background:var(--ni-#{$name})
     }
     .border-#{$name}{
-        border-color: #{$name};
+        border-color: var(--ni-#{$name});
     }
 
 }
@@ -90,46 +90,49 @@
         @include text-gradient;
     }
 
-    .#{$name}to-gray{
+
+    
+    .#{$name}-to-gray{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient ( var(--ni-gray), var(--ni-#{$gray}));
+        background: -webkit-linear-gradient(45deg, var(--ni-gray), var(--ni-#{$gray}));
         @include text-gradient;
     }
-    .#{$name}to-red{
+    .#{$name}-to-red{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-red), var(--ni-#{$red}));
+        background: -webkit-linear-gradient(45deg, var(--ni-red), var(--ni-#{$red}));
         @include text-gradient;
     }
-    .#{$name}to-yellow{
+    .#{$name}-to-yellow{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-yellow), var(--ni-#{$yellow}));
+        background: -webkit-linear-gradient(45deg, var(--ni-yellow), var(--ni-#{$yellow}));
         @include text-gradient;
     }
-    .#{$name}to-greengray{
+    .#{$name}-to-greengray{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-greengray), var(--ni-#{$greengray}));
+        background: -webkit-linear-gradient(45deg, var(--ni-greengray), var(--ni-#{$greengray}));
         @include text-gradient;
     }
-    .#{$name}to-blue{
+    .#{$name}-to-blue{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-blue), var(--ni-#{$blue}));
+        background: -webkit-linear-gradient(45deg, var(--ni-blue), var(--ni-#{$blue}));
         @include text-gradient;
     }
-    .#{$name}to-purplegray{
+    .#{$name}-to-purplegray{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-purplegray), var(--ni-#{$purplegray}));
+        background: -webkit-linear-gradient(45deg, var(--ni-purplegray), var(--ni-#{$purplegray}));
         @include text-gradient;
     }
-    .#{$name}to-purple{
+    .#{$name}-to-purple{
         color: var(--ni-#{$name});
-        background-color:-webkit-linear-gradient(var(--ni-purple), var(--ni-#{$purple}));
+        background: -webkit-linear-gradient(45deg, var(--ni-purple), var(--ni-#{$purple}));
         @include text-gradient;
     }
-    .#{$name}to-pink{
+    .#{$name}-to-pink{
         color: var(--ni-#{$name});
         background: -webkit-linear-gradient(45deg, var(--ni-#{$name}), var(--ni-#{$pink}));
         @include text-gradient;
     }
+
 }
 
 
