@@ -1,6 +1,11 @@
 # 
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nintrealabs/niCons/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/nicons.svg?style=flat)](https://www.npmjs.com/package/nicons)
+<p>
+    <a href="https://github.com/tailwindlabs/nintrealabs/actions"><img src="https://img.shields.io/github/workflow/status/nintrealabs/niCons/Node.js%20CI" alt="Build Status"></a>
+    <a href="https://www.npmjs.com/package/nicons"><img src="https://img.shields.io/npm/dt/nicons.svg" alt="Total Downloads"></a>
+    <a href="https://github.com/nintrealabs/niCons"><img src="https://img.shields.io/npm/v/nicons.svg" alt="Latest Release"></a>
+    <a href="https://github.com/nintrealabs/niCons/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/nicons.svg" alt="License"></a>
+</p>
 
 
 # niCons
